@@ -10,6 +10,15 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
 
 html {
   color: #222;
@@ -336,8 +345,6 @@ textarea {
 //}
 
 
-
-
 /**********************************
               Login Page
  ***********************************/
@@ -345,18 +352,20 @@ textarea {
 .container {
   max-width: 700px;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0 1rem;
   display: block;
   margin: 5% auto;
   font: 1em "Fira sans", sans-serif;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .container-main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
 }
+
 @media all and (max-width: 768px) {
   .container-main {
     flex-direction: column;
@@ -364,19 +373,20 @@ textarea {
   }
 }
 
-.co-top-block{
+.co-top-block {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.co-top-block h1{
+.co-top-block h1 {
   display: flex;
   justify-content: center;
   font-size: 3rem;
   margin-bottom: .1em;
 }
 
-.co-top-block p{
+.co-top-block p {
   display: flex;
   justify-content: center;
   font-size: 1.3rem;
@@ -384,21 +394,23 @@ textarea {
 }
 
 
-.co-top-button{
+.co-top-button {
   display: flex;
   gap: 20px;
   justify-content: space-evenly;
+  overflow: hidden;
 }
+
 @media all and (max-width: 768px) {
-  .co-top-button{
+  .co-top-button {
     flex-direction: column;
     gap: 20px;
   }
 }
 
-.co-top-button a{
+.co-top-button a {
   display: flex;
-  flex:1;
+  flex: 1;
   padding: 0.5rem;
   border: 0.3px solid #ededed;
   align-items: center;
@@ -411,25 +423,26 @@ textarea {
   font-size: 1.1em;
 }
 
-.co-bottom-block{
+.co-bottom-block {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
 }
 
 
-.co-bottom-input label{
+.co-bottom-input label {
   display: flex;
   justify-content: space-between;
 }
 
-.co-bottom-input form{
+.co-bottom-input form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.co-bottom-input input{
+.co-bottom-input input {
   padding-left: 10px;
   height: 40px;
   border: thin solid rgba(224, 224, 224, 0.8);
@@ -437,12 +450,12 @@ textarea {
   border-radius: 8px;
 }
 
-.co-bottom-button{
+.co-bottom-button {
   display: flex;
   justify-content: space-evenly;
 }
 
-.co-bottom-button button{
+.co-bottom-button button {
   width: 100%;
   border: none;
   color: white;
@@ -455,7 +468,7 @@ textarea {
   overflow: hidden;
 }
 
-.co-bottom-block p{
+.co-bottom-block p {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
