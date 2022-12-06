@@ -241,7 +241,7 @@ h3 {
 /*============================
         Building Block
   ============================*/
-.container {
+/* .container {
   width: 90%;
   display: block;
   margin: 5% auto;
@@ -303,6 +303,130 @@ h3 {
 }
 .co-bottom-left-part p, .co-bottom-right-part p {
   font-size: 1.2rem;
-}
+} */
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+/**********************************
+              Login Page
+ ***********************************/
+
+.container {
+  max-width: 700px;
+   width: 100%;
+   display: block;
+   margin: 5% auto;
+   font: 1em "Fira sans", sans-serif;
+ }
+
+.container-main {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ @media all and (max-width 768px) {
+   .container-main {
+     flex-direction: column;
+     gap: 20px;
+   }
+ }
+
+.co-top-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.co-top-block h1{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: .1em;
+}
+
+.co-top-block p{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+
+.co-top-button{
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+@media all and (max-width 768px) {
+  .co-top-button{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.co-top-button a{
+  width: 50%;
+  display: flex;
+  padding: .5rem;
+  border: .3px solid #ededed;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 4px 4px #d9d8d7;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.co-bottom-block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.co-bottom-input label{
+  display: flex;
+  justify-content: space-between;
+}
+
+.co-bottom-input form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.co-bottom-input input{
+  border: solid;
+  padding-left: 10px;
+  height: 40px;
+  border-width: thin;
+  border-color: rgba(224, 224, 224, 0.8);
+  background-color: rgba(224, 224, 224, 0.5);
+  border-radius: 8px;
+}
+
+.co-bottom-button{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.co-bottom-button button{
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #4432e6;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(68, 50, 230, .3);
+  padding: .5rem;
+}
+
+.co-bottom-block p{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: .5rem auto;
+}
