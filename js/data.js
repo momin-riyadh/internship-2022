@@ -20,6 +20,11 @@ export default [
     type: "sweet",
   },
   {
+    item: "🍬",
+    price: .75,
+    type: "sweet",
+  },
+  {
     item: "🥦",
     price: 3.99,
     type: "savory",
