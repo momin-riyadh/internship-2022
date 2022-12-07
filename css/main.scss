@@ -428,7 +428,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow: hidden;
+  text-align: center;
 }
 
 
@@ -454,9 +454,11 @@ textarea {
 .co-bottom-button {
   display: flex;
   justify-content: space-evenly;
+  gap: 30px;
 }
 
 .co-bottom-button button {
+  margin-top: 1.5rem;
   width: 100%;
   border: none;
   color: white;
@@ -467,6 +469,7 @@ textarea {
   padding: 0.5rem;
   display: inline-block;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .co-bottom-block p {
