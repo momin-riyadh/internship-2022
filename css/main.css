@@ -54,6 +54,7 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+  width: 100%;
 }
 
 /*
@@ -525,6 +526,11 @@ ul.connect li:last-child:hover > span svg {
   flex-wrap: wrap;
   flex: 1;
 }
+@media all and (max-width: 768px) {
+  .f-top-block h1 {
+    font-size: 1.8rem;
+  }
+}
 
 .f-top-button a {
   background-color: rgb(35, 39, 235);
@@ -580,6 +586,7 @@ ul.connect li:last-child:hover > span svg {
   flex-direction: column;
   max-width: 320px;
   width: 100%;
+  align-items: center;
 }
 .f-middle-block-four form {
   display: flex;
@@ -640,6 +647,7 @@ ul.connect li:last-child:hover > span svg {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
   }
 }
 @media all and (max-width: 768px) {
