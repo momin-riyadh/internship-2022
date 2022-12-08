@@ -37,13 +37,15 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: crimson;
   text-shadow: none;
+  color: #ffffff;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: crimson;
   text-shadow: none;
+  color: #ffffff;
 }
 
 /*
