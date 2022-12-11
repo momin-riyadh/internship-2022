@@ -11,6 +11,9 @@
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "htmlnano": {
+    "minifySvg": false
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }

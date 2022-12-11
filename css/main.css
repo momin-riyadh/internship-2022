@@ -509,7 +509,7 @@ ul.connect li:last-child:hover > span svg {
 }
 .f-container-main h4 {
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 1.2rem;
 }
 
 .f-top-block {
@@ -533,13 +533,13 @@ ul.connect li:last-child:hover > span svg {
 }
 
 .f-top-button a {
-  background-color: rgb(35, 39, 235);
+  background-color: maroon;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2em;
   border-radius: 8px;
-  box-shadow: 0 3px 3px rgba(35, 39, 235, 0.5);
+  box-shadow: 0 3px 3px rgba(138, 30, 30, 0.5);
 }
 
 .f-middle-block {
@@ -565,6 +565,7 @@ ul.connect li:last-child:hover > span svg {
 .f-middle-block-two table {
   border-collapse: separate;
   border-spacing: 0 8px;
+  margin-top: -10px;
 }
 .f-middle-block-two td {
   width: 80px;
@@ -596,12 +597,15 @@ ul.connect li:last-child:hover > span svg {
 @media all and (max-width: 992px) {
   .f-middle-block-four {
     order: -3;
-    gap: 20px;
+    gap: 1px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
+  }
+  .f-middle-block-four h4 {
+    margin-bottom: 8px;
   }
 }
 .f-middle-block-four form {
@@ -634,7 +638,7 @@ ul.connect li:last-child:hover > span svg {
   transition: all 0.4s ease-in-out;
 }
 .f-middle-block-four button:hover {
-  background-color: rgb(35, 39, 235);
+  background-color: maroon;
   color: #ffffff;
 }
 
