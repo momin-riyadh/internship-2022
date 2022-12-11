@@ -605,8 +605,9 @@ ul.connect {
     flex-wrap: wrap;
     flex: 1;
   }
+
   @media all and (max-width: 768px) {
-    h1{
+    h1 {
       font-size: 1.8rem;
     }
   }
@@ -631,6 +632,9 @@ ul.connect {
   gap: 1rem;
   justify-content: space-between;
   margin: 3% 0;
+  @media all and (max-width: 992px) {
+    gap: 3rem;
+  }
 }
 
 .f-middle-block-one {
@@ -674,6 +678,15 @@ ul.connect {
   max-width: 320px;
   width: 100%;
   align-items: center;
+  @media all and (max-width: 992px) {
+    order: -3;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
 
   form {
     display: flex;
@@ -733,20 +746,8 @@ ul.connect {
     align-items: center;
     justify-content: center;
   }
-  .f-middle-block-four {
-    order: -3;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-  }
 }
 
-@media all and (max-width: 768px) {
-  .f-middle-block {
-    gap: 3rem;
-  }
-}
 
 
 
