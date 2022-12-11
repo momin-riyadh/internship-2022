@@ -184,47 +184,40 @@ textarea {
    ========================================================================== */
 @media print {
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
-
   a[href]::after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
   a[href^="#"]::after,
-a[href^="javascript:"]::after {
+  a[href^="javascript:"]::after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -232,21 +225,18 @@ blockquote {
   thead {
     display: table-header-group;
   }
-
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
-
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
@@ -509,7 +499,7 @@ ul.connect li:last-child:hover > span svg {
 }
 .f-container-main h4 {
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 1.2rem;
 }
 
 .f-top-block {
@@ -533,13 +523,13 @@ ul.connect li:last-child:hover > span svg {
 }
 
 .f-top-button a {
-  background-color: rgb(35, 39, 235);
+  background-color: maroon;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2em;
   border-radius: 8px;
-  box-shadow: 0 3px 3px rgba(35, 39, 235, 0.5);
+  box-shadow: 0 3px 3px rgba(138, 30, 30, 0.5);
 }
 
 .f-middle-block {
@@ -565,6 +555,7 @@ ul.connect li:last-child:hover > span svg {
 .f-middle-block-two table {
   border-collapse: separate;
   border-spacing: 0 8px;
+  margin-top: -10px;
 }
 .f-middle-block-two td {
   width: 80px;
@@ -596,12 +587,15 @@ ul.connect li:last-child:hover > span svg {
 @media all and (max-width: 992px) {
   .f-middle-block-four {
     order: -3;
-    gap: 20px;
+    gap: 1px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
+  }
+  .f-middle-block-four h4 {
+    margin-bottom: 8px;
   }
 }
 .f-middle-block-four form {
@@ -634,7 +628,7 @@ ul.connect li:last-child:hover > span svg {
   transition: all 0.4s ease-in-out;
 }
 .f-middle-block-four button:hover {
-  background-color: rgb(35, 39, 235);
+  background-color: maroon;
   color: #ffffff;
 }
 
@@ -650,7 +644,6 @@ ul.connect li:last-child:hover > span svg {
     justify-content: center;
     gap: 20px;
   }
-
   .f-top-block {
     flex-direction: column;
     gap: 20px;

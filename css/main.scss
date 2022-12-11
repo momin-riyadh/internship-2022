@@ -587,7 +587,7 @@ ul.connect {
 
   h4 {
     font-size: 1.1em;
-    margin-bottom: 10px;
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -621,7 +621,7 @@ ul.connect {
     padding: 0.5rem 1rem;
     font-size: 1.2em;
     border-radius: 8px;
-    box-shadow: 0 3px 3px rgba(35, 39, 235, 0.5);
+    box-shadow: 0 3px 3px rgba(138, 30, 30, 0.5);
   }
 }
 
@@ -647,6 +647,7 @@ ul.connect {
   table {
     border-collapse: separate;
     border-spacing: 0 8px;
+    margin-top: -10px;
   }
 
   td {
@@ -680,12 +681,15 @@ ul.connect {
   align-items: center;
   @media all and (max-width: 992px) {
     order: -3;
-    gap: 20px;
+    gap: 1px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
+    h4{
+      margin-bottom: 8px;
+    }
   }
 
   form {
