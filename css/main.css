@@ -550,6 +550,11 @@ ul.connect li:last-child:hover > span svg {
   justify-content: space-between;
   margin: 3% 0;
 }
+@media all and (max-width: 992px) {
+  .f-middle-block {
+    gap: 3rem;
+  }
+}
 
 .f-middle-block-one {
   display: flex;
@@ -587,6 +592,17 @@ ul.connect li:last-child:hover > span svg {
   max-width: 320px;
   width: 100%;
   align-items: center;
+}
+@media all and (max-width: 992px) {
+  .f-middle-block-four {
+    order: -3;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
 }
 .f-middle-block-four form {
   display: flex;
@@ -640,19 +656,6 @@ ul.connect li:last-child:hover > span svg {
     gap: 20px;
     align-items: center;
     justify-content: center;
-  }
-
-  .f-middle-block-four {
-    order: -3;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-  }
-}
-@media all and (max-width: 768px) {
-  .f-middle-block {
-    gap: 3rem;
   }
 }
 
