@@ -1,12 +1,10 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -14,10 +12,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  &::before, &::after {
-    box-sizing: border-box;
-  }
+}
+*::before, *::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -35,7 +32,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: crimson;
   text-shadow: none;
@@ -51,7 +47,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -67,7 +62,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -80,7 +74,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -90,7 +83,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical;
 }
@@ -98,15 +90,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden,
 [hidden] {
   display: none !important;
@@ -120,7 +109,6 @@ textarea {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -139,7 +127,6 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -154,7 +141,6 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
   visibility: hidden;
 }
@@ -170,7 +156,6 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -186,24 +171,17 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
   *,
   *::before,
@@ -214,20 +192,16 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
   a:visited {
     text-decoration: underline;
   }
-
   a[href]::after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -236,17 +210,14 @@ textarea {
   a[href^="javascript:"]::after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -254,30 +225,24 @@ textarea {
   thead {
     display: table-header-group;
   }
-
   tr,
   img {
     page-break-inside: avoid;
   }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-
-
 /*============================
         Building Block
   ============================*/
-
 .g-container {
   width: 90%;
   display: block;
@@ -286,11 +251,12 @@ textarea {
 
 .g-container-main {
   display: flex;
-  //flex-direction: row-reverse;
   gap: 80px;
   justify-content: space-between;
   align-items: center;
-  @media all and (max-width: 768px) {
+}
+@media all and (max-width: 768px) {
+  .g-container-main {
     flex-direction: column-reverse;
     gap: 20px;
   }
@@ -298,12 +264,11 @@ textarea {
 
 .g-co-left-block {
   flex-basis: 40%;
-
-  img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
+}
+.g-co-left-block img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .g-co-right-block {
@@ -311,47 +276,40 @@ textarea {
   flex-grow: 1;
 }
 
-.g-co-top-part {
-  h1 {
-    text-transform: capitalize;
-    font-size: 3rem;
-    color: #484848;
-    margin-bottom: 0.5rem;
-    line-height: 1.2em;
-  }
-
-  p {
-    font-size: 1.2rem;
-
-  }
+.g-co-top-part h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: #484848;
+  margin-bottom: 0.5rem;
+  line-height: 1.2em;
+}
+.g-co-top-part p {
+  font-size: 1.2rem;
 }
 
 .g-co-bottom-part {
   display: flex;
   gap: 30px;
-  @media all and (max-width: 768px) {
+}
+@media all and (max-width: 768px) {
+  .g-co-bottom-part {
     flex-direction: column;
     gap: 10px;
   }
 }
 
-.g-co-bottom-left-part, .g-co-bottom-right-part {
-  h2 {
-    font-size: 1.8rem;
-    line-height: 1.2em;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
+.g-co-bottom-left-part h2, .g-co-bottom-right-part h2 {
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  margin-bottom: 0.5rem;
 }
-
+.g-co-bottom-left-part p, .g-co-bottom-right-part p {
+  font-size: 1.2rem;
+}
 
 /**********************************
               Login Page
  ***********************************/
-
 .container {
   max-width: 700px;
   width: 100%;
@@ -366,7 +324,6 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 @media all and (max-width: 768px) {
@@ -375,18 +332,16 @@ textarea {
     gap: 20px;
   }
 }
-
 .co-top-block {
   display: flex;
   flex-direction: column;
-
 }
 
 .co-top-block h1 {
   display: flex;
   justify-content: center;
   font-size: 3rem;
-  margin-bottom: .1em;
+  margin-bottom: 0.1em;
 }
 
 .co-top-block p {
@@ -395,7 +350,6 @@ textarea {
   font-size: 1.3rem;
   margin: 1rem auto;
 }
-
 
 .co-top-button {
   display: flex;
@@ -409,7 +363,6 @@ textarea {
     gap: 20px;
   }
 }
-
 .co-top-button a {
   display: flex;
   flex: 1;
@@ -425,15 +378,12 @@ textarea {
   font-size: 1.1em;
 }
 
-
-
 .co-bottom-block {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
 }
-
 
 .co-bottom-input label {
   display: flex;
@@ -468,7 +418,7 @@ textarea {
   background-color: #4432e6;
   font-size: 1.5rem;
   border-radius: 7px;
-  box-shadow: 0 4px 4px rgba(68, 50, 230, .3);
+  box-shadow: 0px 4px 4px rgba(68, 50, 230, 0.3);
   padding: 0.5rem;
   display: inline-block;
   overflow: hidden;
@@ -485,98 +435,58 @@ textarea {
 /*============================
          Footer => Converted scss
   ============================*/
-$color_1: rgb(145, 145, 145);
-$color_2: white;
-$color_3: rgb(163, 163, 163);
-$color_4: #ffffff;
-$background-color_1: #00acee;
-$background-color_2: #FF0000;
-$background-color_3: #3b5998;
-$background-color_4: maroon;
-$background-color_5: #dddddd;
-$background-color_6: rgb(233, 233, 233);
-$background-color_7: white;
-
 .f-container {
   width: 90%;
   margin: 3% auto;
   display: block;
   font: 1em "Gill Sans", sans-serif;
-
-  li {
-    list-style: none;
-    margin-bottom: 10px;
-    font-size: 0.95em;
-    color: $color_1;
-  }
+}
+.f-container li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: rgb(145, 145, 145);
 }
 
 p {
   list-style: none;
   margin-bottom: 10px;
   font-size: 0.95em;
-  color: $color_1;
+  color: rgb(145, 145, 145);
 }
 
-ul.connect {
-  li {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-
-    > span {
-      transition: all 0.4s ease-in-out;
-    }
-
-    &:first-child {
-      &:hover {
-        > span {
-          background: linear-gradient(#962fbf, #d62976, #feda75);
-
-          svg {
-            fill: white;
-          }
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      &:hover {
-        > span {
-          background-color: $background-color_1;
-
-          svg {
-            fill: white;
-          }
-        }
-      }
-    }
-
-    &:nth-child(3) {
-      &:hover {
-        > span {
-          background-color: $background-color_2;
-
-          svg {
-            fill: white;
-          }
-        }
-      }
-    }
-
-    &:last-child {
-      &:hover {
-        > span {
-          background-color: $background-color_3;
-
-          svg {
-            fill: white;
-          }
-        }
-      }
-    }
-  }
+ul.connect li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+ul.connect li > span {
+  transition: all 0.4s ease-in-out;
+}
+ul.connect li:first-child:hover > span {
+  background: linear-gradient(#962fbf, #d62976, #feda75);
+}
+ul.connect li:first-child:hover > span svg {
+  fill: white;
+}
+ul.connect li:nth-child(2):hover > span {
+  background-color: #00acee;
+}
+ul.connect li:nth-child(2):hover > span svg {
+  fill: white;
+}
+ul.connect li:nth-child(3):hover > span {
+  background-color: #FF0000;
+}
+ul.connect li:nth-child(3):hover > span svg {
+  fill: white;
+}
+ul.connect li:last-child:hover > span {
+  background-color: #3b5998;
+}
+ul.connect li:last-child:hover > span svg {
+  fill: white;
 }
 
 .f-container-main {
@@ -586,11 +496,10 @@ ul.connect {
   padding: 3%;
   flex-wrap: wrap;
   overflow: hidden;
-
-  h4 {
-    font-size: 1.1em;
-    margin-bottom: 1.2rem;
-  }
+}
+.f-container-main h4 {
+  font-size: 1.1em;
+  margin-bottom: 1.2rem;
 }
 
 .f-top-block {
@@ -599,32 +508,28 @@ ul.connect {
   align-items: center;
   flex-wrap: wrap;
   flex: 1;
-
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-
-  @media all and (max-width: 768px) {
-    h1 {
-      font-size: 1.8rem;
-    }
+}
+.f-top-block h1 {
+  font-size: 2.5rem;
+  line-height: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+@media all and (max-width: 768px) {
+  .f-top-block h1 {
+    font-size: 1.8rem;
   }
 }
 
-.f-top-button {
-  a {
-    background-color: $background-color_4;
-    color: $color_2;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2em;
-    border-radius: 8px;
-    box-shadow: 0 3px 3px rgba(138, 30, 30, 0.5);
-  }
+.f-top-button a {
+  background-color: maroon;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 3px 3px rgba(138, 30, 30, 0.5);
 }
 
 .f-middle-block {
@@ -634,7 +539,9 @@ ul.connect {
   gap: 1rem;
   justify-content: space-between;
   margin: 3% 0;
-  @media all and (max-width: 992px) {
+}
+@media all and (max-width: 992px) {
+  .f-middle-block {
     gap: 3rem;
   }
 }
@@ -645,34 +552,29 @@ ul.connect {
   gap: 35px;
 }
 
-.f-middle-block-two {
-  table {
-    border-collapse: separate;
-    border-spacing: 0 8px;
-    margin-top: -10px;
-  }
-
-  td {
-    width: 80px;
-    font-size: 15px;
-    white-space: nowrap;
-    color: $color_1;
-  }
+.f-middle-block-two table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-top: -10px;
+}
+.f-middle-block-two td {
+  width: 80px;
+  font-size: 15px;
+  white-space: nowrap;
+  color: rgb(145, 145, 145);
 }
 
-.f-middle-block-three {
-  span {
-    transition: all 0.4s ease-in-out;
-    display: grid;
-    place-items: center;
-    border: 5px;
-    background-color: $background-color_5;
-    border-radius: 50%;
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-  }
+.f-middle-block-three span {
+  transition: all 0.4s ease-in-out;
+  display: grid;
+  place-items: center;
+  border: 5px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }
 
 .f-middle-block-four {
@@ -681,7 +583,9 @@ ul.connect {
   max-width: 320px;
   width: 100%;
   align-items: center;
-  @media all and (max-width: 992px) {
+}
+@media all and (max-width: 992px) {
+  .f-middle-block-four {
     order: -3;
     gap: 1px;
     align-items: center;
@@ -689,49 +593,43 @@ ul.connect {
     width: 100%;
     max-width: 700px;
     margin: auto;
-    h4{
-      margin-bottom: 8px;
-    }
   }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 20px;
-    width: 100%;
+  .f-middle-block-four h4 {
+    margin-bottom: 8px;
   }
-
-  input {
-    border: 1px solid rgb(187, 187, 187);
-    background-color: $background-color_6;
-    padding: 0.5rem;
-    border-radius: 5px;
-    transition: all 0.4s ease-in-out;
-
-    &:focus {
-      outline: 2px solid darkolivegreen;
-    }
-
-    &::placeholder {
-      color: $color_3;
-    }
-  }
-
-  button {
-    padding: 0.5rem;
-    background-color: $background-color_7;
-    border: thin solid rgba(224, 224, 224, 0.8);
-    border-radius: 6px;
-    box-shadow: 0 3px 3px rgba(196, 196, 196, 0.5);
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-
-    &:hover {
-      background-color: $background-color_4;
-      color: $color_4;
-    }
-  }
+}
+.f-middle-block-four form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+.f-middle-block-four input {
+  border: 1px solid rgb(187, 187, 187);
+  background-color: rgb(233, 233, 233);
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.f-middle-block-four input:focus {
+  outline: 2px solid darkolivegreen;
+}
+.f-middle-block-four input::placeholder {
+  color: rgb(163, 163, 163);
+}
+.f-middle-block-four button {
+  padding: 0.5rem;
+  background-color: white;
+  border: thin solid rgba(224, 224, 224, 0.8);
+  border-radius: 6px;
+  box-shadow: 0 3px 3px rgba(196, 196, 196, 0.5);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.f-middle-block-four button:hover {
+  background-color: maroon;
+  color: #ffffff;
 }
 
 .f-bottom-block {
@@ -754,25 +652,259 @@ ul.connect {
   }
 }
 
+/*# sourceMappingURL=main.css.map */
+
+/*============================
+         phone screen page
+  ============================*/
+
+.p-container {
+  width: 90%;
+  margin: 3% auto;
+  display: block;
+  font: 1em "Gill Sans", sans-serif;
+}
+
+.p-container-main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+}
+@media all and(max-width: 768px) {
+  .p-container-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+/*left block*/
+
+.p-left-block{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 3rem;
+  align-items: flex-end;
+
+  padding: 10px;
+}
+
+/*feature one*/
+
+.feature-one{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: right;
+}
+
+.feature-one-icon img{
+  width: 50px;
+}
+
+.feature-one-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-one-text h4{
+  font-size: 14px;
+}
+
+.feature-one-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
 
 
+/*feature two*/
+
+.feature-two{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: right;
+}
+
+.feature-two-icon img{
+  width: 50px;
+}
+
+.feature-two-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-two-text h4{
+  font-size: 14px;
+}
+
+.feature-two-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
 
 
+/*feature three*/
+
+.feature-three{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: right;
+}
+
+.feature-three-icon img{
+  width: 50px;
+}
+
+.feature-three-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-three-text h4{
+  font-size: 14px;
+}
+
+.feature-three-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
 
 
+/*middle block*/
+
+.p-middle-block{
+  padding: 20px;
+  display: flex;
+  align-content: stretch;
+  height: 100%;
+}
+
+.p-middle-block img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
 
 
+/*right block*/
+
+.p-right-block{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3rem;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/*feature four*/
+
+.feature-four{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: left;
+}
+
+.feature-four-icon img{
+  width: 50px;
+}
+
+.feature-four-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-four-text h4{
+  font-size: 14px;
+}
+
+.feature-four-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
 
 
+/*feature five*/
+
+.feature-five{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: left;
+}
+
+.feature-five-icon img{
+  width: 50px;
+}
+
+.feature-five-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-five-text h4{
+  font-size: 14px;
+}
+
+.feature-five-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
 
 
+/*feature six*/
 
+.feature-six{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  width: 100%;
+  alignment: left;
+}
 
+.feature-six-icon img{
+  width: 50px;
+}
 
+.feature-six-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.feature-six-text h4{
+  font-size: 14px;
+}
 
-
-
-
-
-
+.feature-six-text p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
