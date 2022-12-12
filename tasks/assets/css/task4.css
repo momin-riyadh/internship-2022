@@ -692,9 +692,9 @@ ul.connect li:last-child:hover > span svg {
   text-align: right;
   gap: 3rem;
   align-items: flex-end;
+
   padding: 10px;
 }
-
 
 /*feature one*/
 
@@ -794,7 +794,7 @@ ul.connect li:last-child:hover > span svg {
 .p-middle-block{
   padding: 20px;
   display: flex;
-  /*align-content: stretch;*/
+  align-content: stretch;
   height: 100%;
 }
 
