@@ -24,7 +24,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -40,7 +40,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body onload="caller()">
 
 <!--**********************************
               Building Block
@@ -53,7 +53,7 @@
     </div>
     <div class="g-co-right-block">
       <div class="g-co-top-part">
-        <h1> <i class="bi bi-x-diamond-fill"></i> Lorem ipsum dolor sit amet.</h1>
+        <h1 onclick="warningAlert()"><i class="bi bi-x-diamond-fill"></i> Lorem ipsum dolor sit amet.</h1>
         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at beatae, ea eos error est explicabo fuga ipsum
           laboriosam nam neque nihil non nulla numquam officiis quaerat ratione. Aspernatur consectetur dolor enim
           eveniet odit, perferendis placeat qui rerum veniam. Delectus?</P>
@@ -78,6 +78,74 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script>
+
+/**
+ * Success Alert
+ * @script
+ *
+ *
+ */
+
+  function customAlert(msg, duration) {
+    let styler = document.createElement("div");
+    styler.setAttribute("style", "display:block; border: 2px solid 23b7e5;padding:10px; min-width:250px; text-align:left; background-color:#23b7e5; border-radius:4px;font-size:14px;color:#ffffff; padding:15px;position:fixed;top:15px; right: 15px; z-index:5000");
+    styler.innerHTML = `
+          <div style="display: flex; align-items: center;gap: 15px">
+           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+     <polyline points="9 11 12 14 20 6"></polyline>
+     <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"></path>
+           </svg>
+           <div style="display:flex; flex-direction: column;gap:2px">
+                <h3 style="line-height: 1em">Success! </h3>
+                <span> ${msg}</span>
+                </div>
+          </div>
+    `
+    setTimeout(function () {
+      styler.parentNode.removeChild(styler);
+    }, duration);
+    document.body.appendChild(styler);
+  }
+
+  function caller() {
+    customAlert("Lorem ipsum dolor sit amet", "2000");
+  }
+
+  /**
+   * Warning Alert
+   * @script
+   *
+   */
+
+
+  function customAlertWarning(msg, duration) {
+    let styler = document.createElement("div");
+    styler.setAttribute("style", "display:block; border: 2px solid 23b7e5;padding:10px; min-width:250px; text-align:left; background-color:#ffba00; border-radius:4px;font-size:14px;color:#ffffff; padding:15px;position:fixed;top:15px; right: 15px; z-index:5000");
+    styler.innerHTML = `
+          <div style="display: flex; align-items: center;gap: 15px">
+         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M12 9v2m0 4v.01"></path>
+   <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
+</svg>
+           <div style="display:flex; flex-direction: column;gap:2px">
+                <h3 style="line-height: 1em">Warning! </h3>
+                <span> ${msg} </span>
+                </div>
+          </div>
+    `
+    setTimeout(function () {
+      styler.parentNode.removeChild(styler);
+    }, duration);
+    document.body.appendChild(styler);
+  }
+
+  function warningAlert() {
+    customAlertWarning("Lorem ipsum dolor sit amet", "2000");
+  }
+</script>
 
 </body>
 
