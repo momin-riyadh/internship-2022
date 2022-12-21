@@ -17,11 +17,6 @@ robots.txt,3\7\377f6a321ea49092ae656938a73989aed62ca738
 css/main.css,f\a\fa343e38d93aa0d46d1a993565d0ca98d96283b4
 M
 img/favicon/browserconfig.xml,f\e\fe11a278c706e8e50867d864df147051d49c0656
-:
-
-login.html,8\0\8069a16aaa89aa2f982404b0d2c7244c6e283111
-;
-footer.html,e\8\e82cae1ac6cf652322e2a6ca41857534361191cf
 I
 img/favicon/manifest.json,3\2\32ba44fb100ef0169d52ce22c6bf36b264780692
 :
