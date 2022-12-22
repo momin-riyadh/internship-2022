@@ -1,0 +1,70 @@
+@import "config";
+
+@font-face {
+  font-family: 'Inter';
+  src: local('../fonts/static/Inter-Bold.ttf'),
+        local('../fonts/static/Inter-ExtraBold.ttf'),
+        local('../fonts/static/Inter-Regular.ttf'),
+        url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+.homepage{
+  padding: 20px;
+  display: grid;
+  height: 100%;
+  width: 80%;
+  grid-gap: 20px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 40% 30% 20%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.logo{
+  margin: auto 0;
+}
+
+.nav-links{
+  grid-column: span 2;
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+
+  li {
+    float: left;
+    padding: 1rem;
+
+  }
+}
+
+.main-image{
+  grid-column: span 2;
+}
+
+.main-side{
+  grid-row: span 2;
+  background-color: $very-dark-blue;
+  padding: 15px;
+  h2{
+    font-size: 3rem;
+    color: $soft-orange;
+  }
+  p{
+    color: $grayish-blue;
+  }
+
+}
+
+.headline{
+  color: $very-dark-blue;
+}
+
+@import "footer";

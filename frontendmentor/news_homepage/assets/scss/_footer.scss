@@ -1,0 +1,14 @@
+%footer{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 40% 60%;
+  margin-top: 1rem;
+  h3{
+    color: $grayish-blue;
+  }
+
+}
+
+.footer-item-1, .footer-item-2, .footer-item-3{
+  @extend %footer;
+}
