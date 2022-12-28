@@ -1,21 +1,34 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../fonts/static/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("../fonts/static/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
 * {
   box-sizing: border-box;
   padding: 0;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: local("../fonts/static/Inter-Bold.ttf"), local("../fonts/static/Inter-ExtraBold.ttf"), local("../fonts/static/Inter-Regular.ttf"), url("../fonts/Inter-VariableFont_slnt,wght.ttf");
-}
 .homepage {
   padding: 20px;
   display: grid;
   height: 100%;
   width: 80%;
-  grid-gap: 20px;
+  grid-gap: 25px;
+  grid-row-gap: 30px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 40% 30% 20%;
+  grid-template-rows: 10% 42% 28% 20%;
+  font-family: Inter;
 }
 .homepage img {
   width: 100%;
@@ -49,28 +62,68 @@
 .main-side {
   grid-row: span 2;
   background-color: hsl(240deg, 100%, 5%);
-  padding: 15px;
+  padding: 20px;
 }
 .main-side h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: hsl(35deg, 77%, 62%);
+}
+.main-side h4 {
+  color: hsl(36deg, 100%, 99%);
+  font-size: 1.2em;
+  margin: 1em 0;
 }
 .main-side p {
   color: hsl(233deg, 8%, 79%);
+  font-size: 1em;
 }
 
 .headline {
+  padding-right: 20px;
+}
+.headline h1 {
+  font-size: 3rem;
+  font-family: InterExtraBold;
   color: hsl(240deg, 100%, 5%);
+  margin: 0;
+}
+
+.headline-blurb p {
+  color: hsl(236deg, 13%, 42%);
+}
+.headline-blurb a {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5deg, 85%, 63%);
+  padding: 15px 20px;
+}
+
+.footers {
+  padding: 20px 0;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
 }
 
 .footer-item-1, .footer-item-2, .footer-item-3 {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 40% 60%;
-  margin-top: 1rem;
+  font-size: 18px;
 }
 .footer-item-1 h3, .footer-item-2 h3, .footer-item-3 h3 {
   color: hsl(233deg, 8%, 79%);
+  margin: 0;
+}
+.footer-item-1 h4, .footer-item-2 h4, .footer-item-3 h4 {
+  font-family: InterExtraBold;
+  color: hsl(240deg, 100%, 5%);
+}
+.footer-item-1 p, .footer-item-2 p, .footer-item-3 p {
+  color: hsl(236deg, 13%, 42%);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,17 @@
 @import "config";
 
-@font-face {
-  font-family: 'Inter';
-  src: local('../fonts/static/Inter-Bold.ttf'),
-        local('../fonts/static/Inter-ExtraBold.ttf'),
-        local('../fonts/static/Inter-Regular.ttf'),
-        url('../fonts/Inter-VariableFont_slnt,wght.ttf');
-}
-
 .homepage{
   padding: 20px;
   display: grid;
   height: 100%;
   width: 80%;
-  grid-gap: 20px;
+  grid-gap: 25px;
+  grid-row-gap: 30px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 40% 30% 20%;
+  grid-template-rows: 10% 42% 28% 20%;
+  font-family: Inter;
+
   img{
     width: 100%;
     height: 100%;
@@ -52,19 +47,58 @@
 .main-side{
   grid-row: span 2;
   background-color: $very-dark-blue;
-  padding: 15px;
+  padding: 20px;
+
   h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: $soft-orange;
   }
+
+  h4{
+    color: $off-white;
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+
   p{
     color: $grayish-blue;
+    font-size: 1em;
   }
 
 }
 
 .headline{
-  color: $very-dark-blue;
+  h1{
+    font-size: 3rem;
+    font-family: InterExtraBold;
+    color: $very-dark-blue;
+    margin: 0;
+  }
+  padding-right: 20px;
+}
+
+.headline-blurb{
+
+  p{
+    color: $dark-grayish-blue;
+  }
+  a{
+    //font-family: InterBold;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: $off-white;
+    background-color: $soft-red;
+    padding: 15px 20px;
+  }
+}
+
+.footers{
+  padding: 20px 0;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
 }
 
 @import "footer";

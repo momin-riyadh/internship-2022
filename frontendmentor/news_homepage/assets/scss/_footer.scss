@@ -2,13 +2,27 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 40% 60%;
-  margin-top: 1rem;
+  //margin-top: 2rem;
+  font-size: 18px;
+
+  .footer_text{
+
+  }
   h3{
     color: $grayish-blue;
+    margin: 0;
+  }
+  h4{
+    font-family: InterExtraBold;
+    color: $very-dark-blue;
+  }
+  p{
+    color: $dark-grayish-blue;
   }
 
 }
 
 .footer-item-1, .footer-item-2, .footer-item-3{
   @extend %footer;
+
 }

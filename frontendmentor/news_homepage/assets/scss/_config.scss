@@ -5,10 +5,24 @@ $grayish-blue: hsl(233, 8%, 79%);
 $dark-grayish-blue:  hsl(236, 13%, 42%);
 $very-dark-blue: hsl(240, 100%, 5%);
 
-//@font-face {
-//  font-family: 'Inter';
-//  src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
-//}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/static/Inter-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: url('../fonts/static/Inter-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'InterExtraBold';
+  src: url('../fonts/static/Inter-ExtraBold.ttf');
+  font-weight: 800;
+}
+
 
 *{
   box-sizing: border-box;
