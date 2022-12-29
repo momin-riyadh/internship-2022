@@ -14,4 +14,9 @@ class AccountHead extends Model
         'title',
         'type',
     ];
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'acc_head');
+    }
 }

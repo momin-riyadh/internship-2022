@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Transaction;
-use illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Auth;
 
 class TransactionController extends Controller
 {
@@ -19,16 +21,26 @@ class TransactionController extends Controller
    //create and store tansaction
 
    public function store(Request $request)
-   {
-        $request->validate([
-            'voucher_no' => 'required',
-            'voucher_id' => 'required',
-            'narration' => 'required',
-            'debit' => 'required',
-            'credit' => 'required'
-        ]);
+   {      
+          // $user_id = Auth::id();
+          $request->validate([
+               'voucher_no' => 'required',
+               'voucher_id' => 'required',
+               'narration' => 'required',
+               'debit' => 'required',
+               'credit' => 'required'
+          ]);
 
-        return Transaction::create($request->all());
+          return Transaction::create($request->all());
+
+     // Transaction::create([
+     //      'user_id' => auth()->id(),
+     //      'voucher_no' => request('voucher_no'),
+     //      'voucher_id' => request('voucher_id'),
+     //      'narration' => request('narration'),
+     //      'debit' => request('debit'),
+     //      'credit' => request('credit')
+     // ]);
    }
 
    //display specific transaction
@@ -37,6 +49,22 @@ class TransactionController extends Controller
    {
         return Transaction::find($id);
    }
+
+
+   //update
+   public function update(Request $request, $id)
+    {
+        $transaction = Transaction::find($id);
+        $transaction->update($request->all());
+        return $transaction;
+    }
+
+
+    //delete
+    public function destroy($id)
+    {
+        Transaction::destroy($id);
+    }
 
    
 

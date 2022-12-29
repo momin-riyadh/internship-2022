@@ -26,7 +26,7 @@ class AccountHeadController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'head_code' => 'required|unique',
+            'head_code' => 'required',
             'title' => 'required',
             'type' => 'required'
         ]);
@@ -54,7 +54,9 @@ class AccountHeadController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $accounthead = AccountHead::find($id);
+        $accounthead->update($request->all());
+        return $accounthead;
     }
 
     /**
@@ -65,6 +67,6 @@ class AccountHeadController extends Controller
      */
     public function destroy($id)
     {
-        //
+        AccountHead::destroy($id);
     }
 }
