@@ -4,12 +4,13 @@
   padding: 20px;
   display: grid;
   height: 100%;
+  max-width: 1440px;
   width: 80%;
   grid-gap: 25px;
   grid-row-gap: 30px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 42% 28% 20%;
+  grid-template-rows: 10% 42% 27% 25%;
   font-family: Inter;
 
   img{
@@ -25,6 +26,7 @@
 
 .nav-links{
   grid-column: span 2;
+  color: $dark-grayish-blue;
   ul {
     display: block;
     margin: 0;
@@ -35,8 +37,8 @@
 
   li {
     float: left;
-    padding: 1rem;
-
+    //padding: 1rem;
+    padding: 16px 0px 16px 32px;
   }
 }
 
@@ -47,32 +49,39 @@
 .main-side{
   grid-row: span 2;
   background-color: $very-dark-blue;
-  padding: 20px;
+  padding: 20px 25px;
 
   h2{
     font-size: 2.5rem;
     color: $soft-orange;
+    margin-top: 10px;
   }
 
   h4{
     color: $off-white;
-    font-size: 1.2em;
-    margin: 1em 0;
+    font-size: 1em;
+    //margin: 1.5em 0;
   }
 
   p{
     color: $grayish-blue;
-    font-size: 1em;
+    font-size: 14px;
+    margin: 1.5em 0;
+  }
+
+  hr{
+    margin: 25px 0;
   }
 
 }
 
 .headline{
   h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: InterExtraBold;
     color: $very-dark-blue;
     margin: 0;
+    line-height: 1em;
   }
   padding-right: 20px;
 }
@@ -81,6 +90,10 @@
 
   p{
     color: $dark-grayish-blue;
+    font-size: 14px;
+    line-height: 1.6em;
+    word-spacing: 2px;
+    margin: 0 0 50px 0;
   }
   a{
     //font-family: InterBold;
@@ -89,7 +102,7 @@
     text-decoration: none;
     color: $off-white;
     background-color: $soft-red;
-    padding: 15px 20px;
+    padding: 13px 22px;
   }
 }
 

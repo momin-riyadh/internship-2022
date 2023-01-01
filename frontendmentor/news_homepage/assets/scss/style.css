@@ -22,12 +22,13 @@
   padding: 20px;
   display: grid;
   height: 100%;
+  max-width: 1440px;
   width: 80%;
   grid-gap: 25px;
   grid-row-gap: 30px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 42% 28% 20%;
+  grid-template-rows: 10% 42% 27% 25%;
   font-family: Inter;
 }
 .homepage img {
@@ -42,6 +43,7 @@
 
 .nav-links {
   grid-column: span 2;
+  color: hsl(236deg, 13%, 42%);
 }
 .nav-links ul {
   display: block;
@@ -52,7 +54,7 @@
 }
 .nav-links li {
   float: left;
-  padding: 1rem;
+  padding: 16px 0px 16px 32px;
 }
 
 .main-image {
@@ -62,34 +64,43 @@
 .main-side {
   grid-row: span 2;
   background-color: hsl(240deg, 100%, 5%);
-  padding: 20px;
+  padding: 20px 25px;
 }
 .main-side h2 {
   font-size: 2.5rem;
   color: hsl(35deg, 77%, 62%);
+  margin-top: 10px;
 }
 .main-side h4 {
   color: hsl(36deg, 100%, 99%);
-  font-size: 1.2em;
-  margin: 1em 0;
+  font-size: 1em;
 }
 .main-side p {
   color: hsl(233deg, 8%, 79%);
-  font-size: 1em;
+  font-size: 14px;
+  margin: 1.5em 0;
+}
+.main-side hr {
+  margin: 25px 0;
 }
 
 .headline {
   padding-right: 20px;
 }
 .headline h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: InterExtraBold;
   color: hsl(240deg, 100%, 5%);
   margin: 0;
+  line-height: 1em;
 }
 
 .headline-blurb p {
   color: hsl(236deg, 13%, 42%);
+  font-size: 14px;
+  line-height: 1.6em;
+  word-spacing: 2px;
+  margin: 0 0 50px 0;
 }
 .headline-blurb a {
   font-size: 11px;
@@ -97,7 +108,7 @@
   text-decoration: none;
   color: hsl(36deg, 100%, 99%);
   background-color: hsl(5deg, 85%, 63%);
-  padding: 15px 20px;
+  padding: 13px 22px;
 }
 
 .footers {
