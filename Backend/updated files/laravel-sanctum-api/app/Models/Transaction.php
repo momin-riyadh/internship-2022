@@ -2,14 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Transaction extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
+        'acc_head',
         'voucher_no',
         'voucher_id',
         'narration',
@@ -33,4 +36,7 @@ class Transaction extends Model
     {
         return $this->belongsTo(AccountHead::class, 'acc-head', 'head_code');
     }
+
 }
+
+// $transactions = Transaction::where('user_id', '=', Auth::user()->id()->get());

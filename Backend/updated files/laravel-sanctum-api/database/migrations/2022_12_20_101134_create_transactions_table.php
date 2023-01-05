@@ -16,10 +16,10 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
-            $table->string('acc_head');
+            $table->string('acc_head')->nullable();
             $table->foreign('acc_head')->references('head_code')->on('account_heads');
 
             $table->string('voucher_no');

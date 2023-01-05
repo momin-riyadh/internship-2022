@@ -38,14 +38,3 @@ W
 'frontendmentor/news_homepage/index.html,5\7\5726842737073c055793b77eb8d774dd2b3195f0
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-:
-
-login.html,8\0\8069a16aaa89aa2f982404b0d2c7244c6e283111
-c
-3frontendmentor/news_homepage/assets/scss/style.scss,9\b\9ba867b3af75f18ada23e8ebb4dd2e7d2ab53ef4
-e
-5frontendmentor/news_homepage/assets/scss/_config.scss,c\9\c95a1d5fbbbdbe86c83e27c0f4f1b705e26dd77a
-e
-5frontendmentor/news_homepage/assets/scss/_footer.scss,e\f\ef7d8e0cf9e85c43f5fc395634add4c9ab7eb6a4
-Z
-*frontendmentor/news_homepage/attempt2.html,f\5\f57a1140ea4997a01491d55bca17aeed0c772185

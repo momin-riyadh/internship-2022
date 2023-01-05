@@ -22,14 +22,16 @@ class TransactionController extends Controller
 
    public function store(Request $request)
    {      
-          // $user_id = Auth::id();
           $request->validate([
+               // 'user_id' => Auth::user()->id,
                'voucher_no' => 'required',
                'voucher_id' => 'required',
                'narration' => 'required',
                'debit' => 'required',
-               'credit' => 'required'
+               'credit' => 'required', 
           ]);
+
+          // $user_id = Auth::user()->id;
 
           return Transaction::create($request->all());
 

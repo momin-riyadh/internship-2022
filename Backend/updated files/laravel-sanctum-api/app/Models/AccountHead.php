@@ -12,7 +12,6 @@ class AccountHead extends Model
     protected $fillable = [
         'head_code',
         'title',
-        'type',
     ];
 
     public function transactions()

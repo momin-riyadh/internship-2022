@@ -28,7 +28,6 @@ class AccountHeadController extends Controller
         $request->validate([
             'head_code' => 'required',
             'title' => 'required',
-            'type' => 'required'
         ]);
 
         return AccountHead::create($request->all());
