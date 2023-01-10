@@ -1,0 +1,96 @@
+body {
+  font-family: Century Gothic, sans-serif;
+  background-color: cornsilk;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 12% 1fr;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0;
+}
+.container .nav {
+  background-color: darksalmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px;
+  padding: 0 30px;
+  color: #903919;
+}
+.container .nav .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+.container .nav .nav-items h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .nav .nav-items h3 svg {
+  transform: scale(1.2);
+}
+.container .nav .nav-items-menu-button {
+  transform: scale(3);
+}
+.container .main {
+  padding-top: 100px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-rows: 20% auto;
+  justify-content: center;
+}
+.container .main .header {
+  text-align: center;
+}
+.container .main .header h1 {
+  font-size: 3em;
+  color: #ce5326;
+  padding: 0 80px 15px 80px;
+  border-bottom: 1px solid #ce5326;
+  font-weight: normal;
+}
+.container .main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.container .main form .input {
+  color: #ce5326;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .main form .input-title, .container .main form .input-parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.container .main form .input-title input, .container .main form .input-parent input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ce5326;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.container .main form .input-title input:focus, .container .main form .input-parent input:focus {
+  outline: 1px solid #ce5326;
+}
+.container .main form .save-button button {
+  color: #903919;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(178, 81, 44, 0.48);
+  padding: 15px 80px;
+  background-color: #e7957a;
+  font-family: Century Gothic, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=createacchead.css.map */
