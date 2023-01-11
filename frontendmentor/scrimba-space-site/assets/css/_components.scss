@@ -1,0 +1,34 @@
+/*------------------------*/
+/*       Components       */
+/*------------------------*/
+
+.large-button{
+  position: relative;
+  display: grid;
+  z-index: 1;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 0 2em;
+  aspect-ratio: 1;
+
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: hsl(var(--clr-white)/.15);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 500ms ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after{
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+

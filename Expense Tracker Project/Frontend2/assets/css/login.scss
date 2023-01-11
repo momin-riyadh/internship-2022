@@ -1,0 +1,95 @@
+body{
+  font-family: Verdana, sans-serif;
+}
+.container{
+  background-color: cornsilk;
+  border-radius: 10px;
+  width: 90%;
+  height: 80vh;
+  margin: 5%;
+  //padding: 50px;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  //align-items: center;
+  .main{
+    color: #ce5326;
+    margin: auto;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 3em;
+      margin-top: -10px;
+    }
+    .input{
+      display: flex;
+      flex-direction: column;
+      form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        label{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          a{
+            color: #ce5326;
+          }
+        }
+        input{
+          width: 500px;
+          height: 50px;
+          border: 1px solid #ce5326;
+          border-radius: 5px;
+          padding-left: 10px;
+          &:focus{
+            outline: 1px solid #ce5326;
+          }
+        }
+        button{
+          margin-top: 10px;
+          color: cornsilk;
+          border: none;
+          padding: 15px 80px;
+          background-color: #e7957a;
+          font-family: Verdana, sans-serif;
+          &:hover{
+            background-color: #ce5326;
+            transition: 300ms;
+          }
+        }
+
+      }
+    }
+  }
+  .sidebar{
+    background-image: linear-gradient(rgb(231, 149, 122), rgba(206, 83, 38, 0.5)), url("https://picsum.photos/400/700");
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sign-up-button{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p{
+        color: #582310;
+      }
+
+      a{
+        color: #ce5326;
+        background-color: cornsilk;
+        padding: 15px 80px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
