@@ -259,4 +259,75 @@ select {
   transform: scale(1.5);
 }
 
+.primary-navigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.primary-navigation a {
+  text-decoration: none;
+}
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+.underline-indicators > li,
+.underline-indicators > button {
+  padding: var(--underline-gap, 1em) 0;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 0.2rem solid hsl(var(--clr-white)/0);
+}
+.underline-indicators > li:hover, .underline-indicators > li:focus,
+.underline-indicators > button:hover,
+.underline-indicators > button:focus {
+  border-color: hsl(var(--clr-white)/0.5);
+}
+.underline-indicators > li.active, .underline-indicators > li[aria-selected=true],
+.underline-indicators > button.active,
+.underline-indicators > button[aria-selected=true] {
+  color: hsl(var(--clr-white)/1);
+  border-color: hsl(var(--clr-white)/1);
+}
+
+.tab-list {
+  --gap: 2.5rem;
+}
+
+.dot-indicators > button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: hsl(var(--clr-white)/0.25);
+}
+.dot-indicators > button:hover, .dot-indicators > button:focus {
+  background-color: hsl(var(--clr-white)/0.5);
+}
+.dot-indicators > button[aria-selected=true] {
+  background-color: hsl(var(--clr-white)/1);
+}
+
+.numbered-indicators > button {
+  width: 20%;
+  cursor: pointer;
+  border: 1px solid hsl(var(--clr-white)/0.25);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: hsl(var(--clr-dark)/1);
+  color: hsl(var(--clr-white));
+}
+.numbered-indicators > button:hover, .numbered-indicators > button:focus {
+  border: 1px solid hsl(var(--clr-white)/1);
+  background-color: hsl(var(--clr-dark)/1);
+}
+.numbered-indicators > button[aria-selected=true] {
+  background-color: hsl(var(--clr-white)/1);
+  color: hsl(var(--clr-dark));
+}
+
 /*# sourceMappingURL=index.css.map */
