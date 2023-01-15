@@ -1,0 +1,23 @@
+/* ---------------------- */
+/*    Page specific bg    */
+/* ---------------------- */
+
+body{
+  background-size: cover;
+  background-position: bottom center;
+}
+
+
+/* Home */
+
+.home{
+  background-image: url(../../assets/home/background-home-mobile.jpg);
+
+  @media (min-width: 35em){
+    background-position: center center;
+    background-image: url(../../assets/home/background-home-tablet.jpg);;
+  }
+  @media (min-width: 45em){
+    background-image: url(../../assets/home/background-home-desktop.jpg);;
+  }
+}

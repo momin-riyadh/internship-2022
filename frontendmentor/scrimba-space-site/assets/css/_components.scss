@@ -3,8 +3,9 @@
 /*------------------------*/
 
 .large-button{
+  font-size: 2rem;
   position: relative;
-  display: grid;
+  display: inline-grid;
   z-index: 1;
   place-items: center;
   text-decoration: none;
@@ -31,22 +32,6 @@
   }
 }
 
-.primary-navigation{
-  --gap: 8rem;
-  --underline-gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  a{
-    text-decoration: none;
-
-    > span{
-      font-weight: 700;
-      margin-right: 0.5em;
-    }
-  }
-}
 
 .underline-indicators > li,
 .underline-indicators > button {
