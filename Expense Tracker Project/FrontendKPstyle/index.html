@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Expense Tracker</title>
+
+  <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body class="home bg-dark">
+    <header class="primary-header">
+      <div>
+        <img src="https://picsum.photos/100" class="logo">
+      </div>
+      <nav>
+        <ul >
+          <li>Home</li>
+          <li>Transactions</li>
+          <li>Create</li>
+          <li>Profile</li>
+          <li>Log Out</li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="flex-container">
+      <div>
+        <h1>Create Account Head</h1>
+      </div>
+      <div>
+        <form>
+
+          <div class="input">
+
+            <div class="input-title">
+              <label>Title:</label>
+              <input list="title-list" required>
+              <datalist id="title-list">
+                <option value="Utility">
+                <option value="Rent">
+                <option value="Stationary">
+              </datalist>
+            </div>
+
+            <div class="input-parent">
+              <label>Parent:</label>
+              <input list="parent-list">
+              <datalist id="parent-list">
+                <option value="Utility">
+                <option value="Rent">
+                <option value="Stationary">
+              </datalist>
+            </div>
+          </div>
+
+          <div class="save-button">
+            <button type="submit">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
