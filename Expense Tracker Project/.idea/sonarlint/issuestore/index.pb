@@ -19,3 +19,19 @@ T
 $Frontend/assets/scss/_utilities.scss,2\2\225e90c95208dc134eea4b72de047c30ef7a9c3f
 N
 Frontend/assets/css/admin.scss,5\7\572e1fce48fa51bb214434de2f1ed4baab81674e
+6
+a.html,2\5\25e7e8960b03ecb19189f36b8ef611389397c95c
+C
+Frontend/login.html,d\f\df5e2e6c86f630fb05e1d565701c5cec14a51a43
+O
+Frontend/assets/css/signup.scss,d\c\dcf7ef1cfbb5d600e4bbaa5bb00c0d223b2eecb3
+D
+Frontend/signup.html,4\2\42c29bbb0ad5dd9549a3ce17cdac21d9660b4346
+V
+&Frontend/assets/css/createacchead.scss,f\2\f24da338dd2c3cc2cd2016977e52ab078ab1992d
+K
+Frontend/createacchead.html,2\b\2b15b5e6aa5c1557f7ae8219767360cc98eaf20a
+N
+Frontend/assets/css/login.scss,4\b\4b95093529235c9657ac0c1297a6e01b2f821a59
+C
+Frontend/admin.html,8\7\8709e907b4930a317548d1e6088aebc286927f4c
