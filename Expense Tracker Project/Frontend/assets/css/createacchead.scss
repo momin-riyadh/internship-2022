@@ -98,7 +98,13 @@ body{
           font-weight: 500;
           font-size: 18px;
           letter-spacing: 2px;
+
+          &:hover{
+            background-color: #ce5326;
+            transition: 300ms;
+          }
         }
+
       }
     }
   }
