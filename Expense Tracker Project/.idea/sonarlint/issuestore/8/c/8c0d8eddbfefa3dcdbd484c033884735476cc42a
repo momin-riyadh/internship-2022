@@ -1,0 +1,16 @@
+
+jWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ8Èœ×ÌÜ0
+a	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ8Èœ×ÌÜ0
+TWeb:TableWithoutCaptionCheck
+" Add a description to this table.(¿‰˜ÿÿÿÿÿ8Èœ×ÌÜ0
+b	php:S1808 "FMove this "else" to the same line as the previous closing curly brace.(á¢–¬8İœ×ÌÜ0
+f	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(Ù‹çÔ8Şœ×ÌÜ0
+e	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(Øù®O8Şœ×ÌÜ0
+k	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(‡—¾Œûÿÿÿÿ8Şœ×ÌÜ0
+W	php:S1808"6Put exactly one space after comma separated arguments.(œ™€êùÿÿÿÿ8Şœ×ÌÜ0
+`	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(Ù‹çÔ8Şœ×ÌÜ0
+_	php:S1808"DPut one space between this "if" keyword and the opening parenthesis.(Øù®O8Şœ×ÌÜ0
+h	php:S1808"GPut one space between this "while" keyword and the opening parenthesis.(‡—¾Œûÿÿÿÿ8Şœ×ÌÜ0
+b	php:S1808 "FPut one space between this "else" keyword and the opening curly brace.(á¢–¬8Şœ×ÌÜ0
+J	php:S2115")Add password protection to this database.(œ™€êùÿÿÿÿ8Şœ×ÌÜ0
+f	php:S1779"RReplace all non line feed end of line characters in this file "example.php" by LF.8Şœ×ÌÜ0

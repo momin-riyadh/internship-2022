@@ -1,6 +1,8 @@
 body {
   font-family: Century Gothic, sans-serif;
   background-color: cornsilk;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container {
@@ -8,15 +10,14 @@ body {
   grid-template-rows: 12% 1fr;
   max-width: 1440px;
   height: 100%;
-  margin: 0;
+  max-height: 100vh;
 }
 .container .nav {
   background-color: darksalmon;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -10px;
-  padding: 0 30px;
+  padding: 45px 30px;
   color: #903919;
 }
 .container .nav .nav-items {
@@ -30,71 +31,71 @@ body {
   align-items: center;
   gap: 5px;
 }
+.container .nav .nav-items h3 a {
+  text-decoration: none;
+  color: #903919;
+}
 .container .nav .nav-items h3 svg {
   transform: scale(1.2);
 }
-.container .nav .nav-items-menu-button {
-  transform: scale(3);
-}
 .container .main {
-  padding-top: 100px;
+  margin-top: 20px;
   display: grid;
-  grid-gap: 50px;
-  grid-template-rows: 20% auto;
-  justify-content: center;
+  grid-template-columns: 15% 1fr 20%;
+  gap: 5px;
 }
-.container .main .header {
-  text-align: center;
-}
-.container .main .header h1 {
-  font-size: 3em;
-  color: #ce5326;
-  padding: 0 80px 15px 80px;
-  border-bottom: 1px solid #ce5326;
-  font-weight: normal;
-}
-.container .main form {
+.container .main .sidebar {
+  height: 90vh;
+  padding: 0 30px;
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25px;
+  justify-content: flex-start;
+  line-height: 2em;
+  text-align: left;
+  gap: 5px;
 }
-.container .main form .input {
-  color: #ce5326;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.container .main .sidebar-components ul {
+  list-style: none;
+  padding-left: 0;
 }
-.container .main form .input-title, .container .main form .input-parent {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+.container .main .sidebar-components ul a {
+  text-decoration: none;
+  color: black;
 }
-.container .main form .input-title input, .container .main form .input-parent input {
-  width: 300px;
-  height: 30px;
-  border: 1px solid #ce5326;
-  border-radius: 5px;
-  padding-left: 10px;
+.container .main .sidebar-components ul a:hover {
+  color: chocolate;
 }
-.container .main form .input-title input:focus, .container .main form .input-parent input:focus {
-  outline: 1px solid #ce5326;
+.container .main .sidebar-components:not(:last-child) {
+  border-bottom: 1px solid lightcoral;
 }
-.container .main form .save-button button {
-  color: #fdf6db;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(178, 81, 44, 0.48);
-  padding: 12px 80px;
-  background-color: #e7957a;
-  font-family: Century Gothic, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 2px;
+.container .main .main-middle {
+  display: grid;
+  grid-template-rows: 25% 1fr 40%;
 }
-.container .main form .save-button button:hover {
-  background-color: #ce5326;
-  transition: 300ms;
+.container .main .main-middle .total {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+.container .main .main-middle .total-components {
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  padding-inline: 10px;
+}
+.container .main .main-middle .trend-graph {
+  background-color: navajowhite;
+}
+.container .main .main-middle .transactions {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: 5px;
+}
+.container .main .main-middle .transactions-component {
+  background-color: rgba(49, 49, 49, 0.13);
+}
+.container .main .profile-analytics {
+  background-color: rgba(255, 182, 193, 0.57);
 }
 
 /*# sourceMappingURL=admin.css.map */

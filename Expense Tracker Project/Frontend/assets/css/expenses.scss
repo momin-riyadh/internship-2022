@@ -1,21 +1,21 @@
 body{
   font-family: Century Gothic, sans-serif;
   background-color: cornsilk;
+  margin: 0;
 }
 .container{
   display: grid;
   grid-template-rows: 12% 1fr;
   max-width: 1440px;
   height: 100%;
-  margin: 0;
+  max-height: 100vh;
 
   .nav{
     background-color: darksalmon;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -10px;
-    padding: 0 30px;
+    padding: 45px 30px;
     color: #903919;
 
     .nav-items{
@@ -42,6 +42,36 @@ body{
       }
     }
   }
+
+  .main{
+    padding: 20px;
+    overflow-y:auto;
+    margin-top: 20px;
+  }
+  .explist{
+    display: grid;
+    row-gap: 15px;
+
+    .explist-item-1{
+      border: 1px solid lightcoral;
+      background-color: white;
+      padding-inline: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /*
   .main{
     padding-top: 100px;
     display: grid;
@@ -112,4 +142,5 @@ body{
       }
     }
   }
+  */
 }
