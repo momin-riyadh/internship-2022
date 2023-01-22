@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <h1>Welcome</h1>
+        <div class="input">
+            <form>
+                <!--        <label for="username" id="username" >Password</label>-->
+                <input type="text" name="username" placeholder="Username" required>
+
+                <!--        <label for="email" id="email">Email<a href=#>Forgot?</a></label>-->
+                <input type="text" name="email" placeholder="Email" pattern="(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}" required>
+
+                <!--        <label for="password" id="password" >Password</label>-->
+                <input type="text" name="password" placeholder="Password" required>
+
+                <!--        <label for="confirm-password" id="confirm-password" >Confirm Password</label>-->
+                <input type="text" name="confirm-password" placeholder="Confirm Password">
+
+                <div class="sign-up-button">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="https://picsum.photos/150" alt="">
+        </div>
+        <div class="log-in-button">
+            <p>Already have an account?</p>
+            <a role="button" href="login.html">Log In</a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
