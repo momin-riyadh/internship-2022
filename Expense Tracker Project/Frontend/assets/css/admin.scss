@@ -86,11 +86,26 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5px;
 
+        a{
+          text-decoration: none;
+          color: black;
+        }
+
 
         &-components {
           background-color: whitesmoke;
+          //background-image: url("../../assets/shared/wave-png-9943.png");
           border: 1px solid gray;
           padding-inline: 10px;
+          border-radius: 15px;
+          //display: flex;
+          //justify-content: space-between;
+
+          &:hover{
+            background-color: lightpink;
+            transition: 400ms ease-in-out, transform 300ms ease-in-out;
+            transform: scale(1.03);
+          }
         }
       }
       .trend-graph{
@@ -100,6 +115,10 @@ body{
         display: grid;
         grid-template-columns: 4fr 3fr;
         grid-gap: 5px;
+        a{
+          text-decoration: none;
+          color: black;
+        }
         &-component{
           background-color: rgba(49, 49, 49, 0.13);
         }
@@ -108,7 +127,14 @@ body{
     }
 
     .profile-analytics{
+      display: grid;
+      grid-template-rows: 2fr 3fr;
+      row-gap:5px;
       background-color: rgba(255, 182, 193, 0.57);
+
+      & > div{
+        background: linear-gradient(to bottom right, transparent, white);
+      }
     }
   }
 }

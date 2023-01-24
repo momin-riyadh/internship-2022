@@ -11,13 +11,18 @@ class PagesController extends Controller
         return view('index');
     }
 
-    public function login()
-    {
-        return view('login');
-    }
+//    public function login()
+//    {
+//        return view('login');
+//    }
+//
+//    public function signup()
+//    {
+//        return view('signup');
+//    }
 
-    public function signup()
+    public function createacchead()
     {
-        return view('signup');
+        return view('createacchead');
     }
 }

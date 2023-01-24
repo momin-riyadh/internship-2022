@@ -78,10 +78,20 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
 }
+.container .main .main-middle .total a {
+  text-decoration: none;
+  color: black;
+}
 .container .main .main-middle .total-components {
   background-color: whitesmoke;
   border: 1px solid gray;
   padding-inline: 10px;
+  border-radius: 15px;
+}
+.container .main .main-middle .total-components:hover {
+  background-color: lightpink;
+  transition: 400ms ease-in-out, transform 300ms ease-in-out;
+  transform: scale(1.03);
 }
 .container .main .main-middle .trend-graph {
   background-color: navajowhite;
@@ -91,11 +101,21 @@ body {
   grid-template-columns: 4fr 3fr;
   grid-gap: 5px;
 }
+.container .main .main-middle .transactions a {
+  text-decoration: none;
+  color: black;
+}
 .container .main .main-middle .transactions-component {
   background-color: rgba(49, 49, 49, 0.13);
 }
 .container .main .profile-analytics {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  row-gap: 5px;
   background-color: rgba(255, 182, 193, 0.57);
+}
+.container .main .profile-analytics > div {
+  background: linear-gradient(to bottom right, transparent, white);
 }
 
 /*# sourceMappingURL=admin.css.map */

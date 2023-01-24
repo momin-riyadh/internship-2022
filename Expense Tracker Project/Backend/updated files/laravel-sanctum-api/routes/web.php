@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/pages', [PagesController::class, 'index'])->name('/pages');
 
-Route::get('/login', [PagesController::class, 'login'])->name('/login');
+Route::get('/login', [UserController::class, 'login'])->name('/login');
 
-Route::get('/signup', [PagesController::class, 'signup'])->name('/signup');
+Route::get('/signup', [UserController::class, 'signup'])->name('/signup');
+
+Route::get('/createacchead', [PagesController::class, 'creteacchead'])->name('/createacchead');
+
+Route::post('/users', [UserController::class, 'store'])->name('/users');
