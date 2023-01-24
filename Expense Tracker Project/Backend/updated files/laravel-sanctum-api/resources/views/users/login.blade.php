@@ -20,7 +20,8 @@
     <div class="main">
         <h1>Welcome Back</h1>
         <div class="input">
-            <form method="POST" action="/login">
+            <form method="POST" action="/api/login">
+                @csrf
                 <label for="email" id="email">Email<a href=#>Forgot?</a></label>
                 <input type="text" name="email"  pattern="(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}" required>
 

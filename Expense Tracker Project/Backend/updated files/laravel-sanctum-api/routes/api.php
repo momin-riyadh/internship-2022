@@ -4,7 +4,6 @@ use App\Http\Controllers\AccountHeadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TransactionController;
 
 /*
@@ -38,11 +37,11 @@ Route::group(['middleware'=>['auth:sanctum']], function() {
     //account-head routes
     Route::get('/accountheads', [AccountHeadController::class, 'index']);
     Route::get('/accountheads/{id}', [AccountHeadController::class, 'show']);
-    Route::post('/accountheads', [AccountHeadController::class, 'store']); 
+    Route::post('/accountheads', [AccountHeadController::class, 'store']);
     Route::put('/accountheads/{id}', [AccountHeadController::class, 'update']);
     Route::delete('/accountheads/{id}', [AccountHeadController::class, 'delete']);
 
-    Route::post('/logout', [AuthController::class, 'logout']);    
+    Route::post('/logout', [AuthController::class, 'logout']);
 });
 
 

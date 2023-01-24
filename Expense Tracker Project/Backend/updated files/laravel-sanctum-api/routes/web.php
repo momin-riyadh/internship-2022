@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/pages', [PagesController::class, 'index'])->name('/pages');
+Route::get('/dashboard', [PagesController::class, 'index'])->name('/dashboard');
 
 Route::get('/login', [UserController::class, 'login'])->name('/login');
 
