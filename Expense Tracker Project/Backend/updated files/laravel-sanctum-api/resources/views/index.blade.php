@@ -25,7 +25,7 @@
             <div class="nav-items-logout">
                 <form method="POST" action="/api/logout">
                     @csrf
-                    <button>Log Out</button>
+                    <button type="submit">Log Out</button>
                 </form>
 {{--                <h3><a href="#">Log Out</a></h3>--}}
             </div>
