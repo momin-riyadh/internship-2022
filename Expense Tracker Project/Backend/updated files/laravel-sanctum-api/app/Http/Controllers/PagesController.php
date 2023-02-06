@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Auth;
 class PagesController extends Controller
 {
     public function index()
     {
-        return view('index');
+        /*if(isset(Auth))
+            return view('index');
+        else
+            dd("you need to login first");*/
     }
 
 
