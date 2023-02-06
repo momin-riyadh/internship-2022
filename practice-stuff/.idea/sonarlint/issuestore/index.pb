@@ -1,0 +1,19 @@
+
+B
+flex-img-grid.html,a\c\ace87710efdd576ffdc50a36ddd3de1b57bfab5d
+?
+grid-prac1.html,c\a\ca23db1ab3c579592d9876e475cf19cdabc6d43d
+9
+	task2.css,5\2\528a1abb1f05a36ea03559e1b52f889115f17a66
+9
+	test1.css,0\6\06614b8c670bf3a3bea1865dfe90e7906b920500
+@
+flex-res-nav.css,a\e\ae590e7db46dc91ad5fd547f8d4e2f062a1f8303
+A
+flex-img-grid.css,7\7\7704e890eb6c0d7e11bcb54bffd00629bb3449e0
+>
+grid-prac1.css,3\1\319130535dc6fab01fe79fed432daaea08f6d2ea
+H
+sasstuts/scss/style.scss,b\9\b9e78e21ff5e36be9ee7ef1f428cafa1ac74ae23
+C
+grid-prac1index.css,5\8\587067e99ef2f72d93187e614915760e8f3f0bd9
