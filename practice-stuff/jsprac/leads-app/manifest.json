@@ -5,5 +5,8 @@
   "action": {
     "default_popup": "jsprac4.html",
     "default_icon": "leads-icon.png"
-  }
+  },
+  "permissions": [
+    "tabs"
+  ]
 }
