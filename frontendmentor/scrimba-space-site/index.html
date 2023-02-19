@@ -21,6 +21,7 @@
 </head>
 <body class="home">
 
+  <a class="skip-to-content" href="#main">Skip to Content</a>
   <header class="primary-header flex">
     <div>
       <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
@@ -30,15 +31,15 @@
 
     <nav>
       <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span>00</span>Home</a>
-        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span>01</span>Destination</a>
-        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span>02</span>Crew</a>
-        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span>03</span>Technology</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><spa aria-hidden="true" n>02</span>Crew</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
       </ul>
     </nav>
   </header>
 
-  <div class="grid-container grid-container--home">
+  <main id="main" class="grid-container grid-container--home">
     <div>
       <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
       <span class="d-block text-white fs-900 ff-serif">Space</span></h1>
@@ -52,8 +53,7 @@
     <div>
       <a href="#" class="large-button uppercase ff-serif text-dark bg-white">Explore</a>
     </div>
-
-  </div>
+  </main>
 
 </body>
 </html>
