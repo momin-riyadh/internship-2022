@@ -26,5 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/transactions', [App\Http\Controllers\TransactionController::class, 'showList'])->name('transactions');
 
 //account heads
-Route::get('/account-heads', [App\Http\Controllers\AccountHeadController::class, 'showList'])->name('account_heads');
+Route::get('/account-heads', [App\Http\Controllers\AccountHeadController::class, 'showList'])->name('account-heads');
+Route::get('/create-account-head', [App\Http\Controllers\AccountHeadController::class, 'createacchead'])->name('create-account-head');
+Route::post('/create-account-head', [App\Http\Controllers\AccountHeadController::class, 'create'])->name('create-account-head');
 
