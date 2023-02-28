@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccountHead;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -46,5 +47,21 @@ class AccountHeadController extends Controller
     {
         return view('create_account_head');
     }
+
+    /*public function addAccHead(Request $request){
+        $this->validate($request, [
+            'title' => 'required',
+            'head_code' => 'required'
+        ]);
+
+        //create acchead
+        $acchead = new AccountHead;
+        $acchead->title = $request->input('title');
+        $acchead->head_code = $request->input('head_code');
+        $acchead->user_id = auth()->user()->id;
+        $acchead->save();
+
+        return redirect('/account-heads')->with('success', 'Account Head Created');
+    }*/
 
 }

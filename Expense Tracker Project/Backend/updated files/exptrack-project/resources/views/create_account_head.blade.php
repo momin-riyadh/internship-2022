@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('assets/css/signup.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/createacchead.css') }}" rel="stylesheet">
 
 </head>
 
@@ -83,14 +83,14 @@
 
                 <div class="input-parent">
                     <label>Parent:</label>
-                    <input id="parent" list="parent-list" class="form-control @error('parent') is-invalid @enderror" name="parent" required>
+                    <input id="parent" list="parent-list" class="form-control @error('head_code') is-invalid @enderror" name="head_code" required>
                     <datalist id="parent-list">
                         <option value="Utility">
                         <option value="Rent">
                         <option value="Stationary">
                     </datalist>
 
-                    @error('parent')
+                    @error('head_code')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>

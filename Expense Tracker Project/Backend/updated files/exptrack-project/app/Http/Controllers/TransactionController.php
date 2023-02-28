@@ -28,4 +28,8 @@ class TransactionController extends Controller
         $transactions = DB::select('select * from transactions order by `transaction_at` desc');
         return view('transactions', ['transactions'=>$transactions]);
     }
+
+    public function addTransaction(){
+        $transactions =
+    }
 }
