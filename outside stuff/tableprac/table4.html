@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/table4.css">
+    <style>
+        table, tr, td{
+            border: 1px solid #313131;
+            border-collapse: collapse;
+            font: 15px "Gill Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+<div class="ptable">
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: cornflowerblue; width: 30%">
+            <col span="1" style="background-color: #9bed64; width: 10%">
+            <col span="1" style="background-color: #eda964; width: 20%">
+            <col span="1" style="background-color: #e864ed; width: 10%">
+            <col span="1" style="background-color: #eddb64; width: 30%">
+        </colgroup>
+        <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td rowspan="2">H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td colspan="3">K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td colspan="3">O</td>
+        </tr>
+    </table>
+</div>
+<div class="anothertable">
+    <table>
+<!--        <colgroup>-->
+<!--            <col span="1" style="background-color: cornflowerblue; width: 30%">-->
+<!--            <col span="1" style="background-color: #9bed64; width: 10%">-->
+<!--            <col span="1" style="background-color: #eda964; width: 20%">-->
+<!--            <col span="1" style="background-color: #e864ed; width: 10%">-->
+<!--            <col span="1" style="background-color: #eddb64; width: 30%">-->
+<!--        </colgroup>-->
+        <tr>
+            <td rowspan="3">Day</td>
+            <td colspan="3">Seminar</td>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topic</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 a.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity:DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td rowspan="2">Xtransform</td>
+
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSl Formatting Objects</td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

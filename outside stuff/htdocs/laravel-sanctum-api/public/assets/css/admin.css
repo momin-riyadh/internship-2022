@@ -1,0 +1,101 @@
+body {
+  font-family: Century Gothic, sans-serif;
+  background-color: cornsilk;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 12% 1fr;
+  max-width: 1440px;
+  height: 100%;
+  max-height: 100vh;
+}
+.container .nav {
+  background-color: darksalmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 30px;
+  color: #903919;
+}
+.container .nav .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+.container .nav .nav-items h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .nav .nav-items h3 a {
+  text-decoration: none;
+  color: #903919;
+}
+.container .nav .nav-items h3 svg {
+  transform: scale(1.2);
+}
+.container .main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 15% 1fr 20%;
+  gap: 5px;
+}
+.container .main .sidebar {
+  height: 90vh;
+  padding: 0 30px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 2em;
+  text-align: left;
+  gap: 5px;
+}
+.container .main .sidebar-components ul {
+  list-style: none;
+  padding-left: 0;
+}
+.container .main .sidebar-components ul a {
+  text-decoration: none;
+  color: black;
+}
+.container .main .sidebar-components ul a:hover {
+  color: chocolate;
+}
+.container .main .sidebar-components:not(:last-child) {
+  border-bottom: 1px solid lightcoral;
+}
+.container .main .main-middle {
+  display: grid;
+  grid-template-rows: 25% 1fr 40%;
+}
+.container .main .main-middle .total {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+.container .main .main-middle .total-components {
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  padding-inline: 10px;
+}
+.container .main .main-middle .trend-graph {
+  background-color: navajowhite;
+}
+.container .main .main-middle .transactions {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: 5px;
+}
+.container .main .main-middle .transactions-component {
+  background-color: rgba(49, 49, 49, 0.13);
+}
+.container .main .profile-analytics {
+  background-color: rgba(255, 182, 193, 0.57);
+}
+
+/*# sourceMappingURL=admin.css.map */

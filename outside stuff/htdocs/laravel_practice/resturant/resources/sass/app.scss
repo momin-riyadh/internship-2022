@@ -1,0 +1,124 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+ 
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  .top-bar{
+     padding: 0.2rem;
+     background-color: white;
+     box-shadow: 0 4px 2px -2px rgb(224, 199, 199);
+     
+  }
+
+  .left-sidebar{
+      height: 100vh;
+      position: fixed;
+      left:0;
+      background-color: rgb(204, 7, 7); 
+      box-shadow: 5px 0 5px -5px rgb(128, 78, 78);
+      width: 12%;
+      overflow: auto;
+  }
+  
+  .list{
+      column-gap: 20px;
+      a{
+          text-decoration: none;
+          color: gray;
+      }
+  }
+ 
+
+  select{
+      border:none;
+      background: none;
+  }
+
+
+  .accordion {
+    background-color:rgb(204, 7, 7); 
+    color: rgb(253, 246, 246);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(204, 7, 7);
+    color:rgb(247, 250, 252);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgb(204, 7, 7); 
+    overflow: hidden;
+  }
+
+  li{
+   
+      list-style-type: none;
+     // border-bottom: 1px solid white;
+      a{
+       
+          color:white;
+      }
+
+      a:hover{
+          text-decoration: none;
+         
+      }
+  }
+
+
+  .content{
+    
+    display: flex;
+  
+   
+    
+  }
+
+  .child-content{
+    
+    margin-left: 12%;
+    
+  }
+ 

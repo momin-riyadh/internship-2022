@@ -1,0 +1,93 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: navajowhite;
+}
+
+.container {
+  background-color: cornsilk;
+  border-radius: 10px;
+  width: 90%;
+  height: 80vh;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+.container .main {
+  color: #ce5326;
+  margin: auto;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main h1 {
+  font-size: 3em;
+  margin-top: -10px;
+}
+.container .main .input {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .input form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+.container .main .input form label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .main .input form label a {
+  color: #ce5326;
+}
+.container .main .input form input {
+  width: 500px;
+  height: 50px;
+  border: 1px solid #ce5326;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.container .main .input form input:focus {
+  outline: 1px solid #ce5326;
+}
+.container .main .input form button {
+  margin-top: 10px;
+  color: cornsilk;
+  border: none;
+  padding: 15px 80px;
+  background-color: #e7957a;
+  font-family: Verdana, sans-serif;
+}
+.container .main .input form button:hover {
+  background-color: #ce5326;
+  transition: 300ms;
+}
+.container .sidebar {
+  background-image: linear-gradient(rgb(231, 149, 122), rgba(206, 83, 38, 0.5)), url("https://picsum.photos/400/700");
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .sidebar .sign-up-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sidebar .sign-up-button p {
+  color: #582310;
+}
+.container .sidebar .sign-up-button a {
+  color: #ce5326;
+  background-color: cornsilk;
+  padding: 15px 80px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=login.css.map */

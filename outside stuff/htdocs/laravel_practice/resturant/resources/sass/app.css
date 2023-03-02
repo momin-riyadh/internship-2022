@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.top-bar {
+  padding: 0.2rem;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 2px -2px #e0c7c7;
+          box-shadow: 0 4px 2px -2px #e0c7c7;
+}
+
+.left-sidebar {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  background-color: #cc0707;
+  -webkit-box-shadow: 5px 0 5px -5px #804e4e;
+          box-shadow: 5px 0 5px -5px #804e4e;
+  width: 12%;
+  overflow: auto;
+}
+
+.list {
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.list a {
+  text-decoration: none;
+  color: gray;
+}
+
+select {
+  border: none;
+  background: none;
+}
+
+.accordion {
+  background-color: #cc0707;
+  color: #fdf6f6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+}
+
+.active, .accordion:hover {
+  background-color: #cc0707;
+  color: #f7fafc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #cc0707;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  text-decoration: none;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.child-content {
+  margin-left: 12%;
+}
+/*# sourceMappingURL=app.css.map */
